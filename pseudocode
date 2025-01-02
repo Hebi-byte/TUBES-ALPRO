@@ -1,0 +1,143 @@
+Procedure daftardatamobil()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    select : Integer
+    i : Integer
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+
+    output ("==================================")
+    output ("Daftar Harga Mobil")
+    output ("==================================")
+
+    FOR i <- 0 TO harga.size() - 1
+        output ((i+1)+". Merk Mobil : " + merk.get(i)+" || Harga Mobil : " + harga.get(i)) 
+    END FOR
+
+    output ("==================================")
+    output ("0. Kembali")
+    output ("==================================")
+
+    input (select)
+    IF select == 0 THEN
+        END Procedure
+    ELSE
+        output ("pilihan tidak ada")
+        daftardatamobil()
+    END IF
+
+
+
+Procedure inputdatamobil()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+
+    output ("==================================")
+    output ("input merk mobil dan harga mobil")
+    output ("==================================")
+
+    output ("Masukkan Merk Mobil : ")
+    input(merk.add)
+
+    output ("Masukkan Harga Mobil : ")
+    input(harga.add)
+END procedure
+
+Procedure updatedata()
+kamus
+    x : Integer
+algoritma
+    output ("==================================")
+    output ("Update Data Mobil")
+    output ("==================================")
+    output ("1. update merk mobil dan harga mobil")
+    output ("2. hapus data mobil")
+    output ("0. kembali")
+    output ("==================================")
+
+    input (x)
+    switch x
+        case 1
+            inputdatamobil()
+        case 2
+            deletedatamobil()
+        case 0
+            END Procedure
+        default
+            output ("pilihan tidak ada")
+            updatedata()
+    end switch
+
+
+Procedure editmobil()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    select : Integer
+    i : Integer
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+
+
+    output ("==================================")
+    output ("Edit Data Mobil")
+    output ("==================================")
+
+    FOR i <- 0 TO harga.size() - 1
+        output ((i+1)+". Merk Mobil : " + merk.get(i)+" || Harga Mobil : " + harga.get(i)) 
+    END FOR
+
+    output ("==================================")
+    input (select)
+    IF select > 0 && select <= harga.size() THEN
+        select <- select - 1
+        output ("merk mobil : "+merk.get(sellect)+" || harga mobil : "+harga.get(sellect))
+        output ("==================================")
+        output ("Masukkan Merk Mobil : ")
+        input(merk.set(select))
+        output ("Masukkan Harga Mobil : ")
+        input(harga.set(select))
+    End IF
+END Procedure
+
+
+Program base
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    x : Integer
+algoritma
+    output ("==================================")
+    output ("dealer mobil")
+    output ("==================================")
+    output ("1. Input Data Mobil")
+    output ("2. Daftar Data Mobil")
+    output ("3. Edit Data Mobil")
+    output ("4. Harga Mobil tertinggi dan terendah")
+    output ("0. Exit")
+    output ("==================================")
+
+    input (x)
+    switch x
+        case 1
+            inputdatamobil()
+        case 2
+            daftardatamobil()
+        case 3
+            editmobil()
+        case 4
+            hargaTertinggiTerendah()
+        case 0
+            END Program
+        default
+            output ("pilihan tidak ada")
+            base()
+    end switch
+End Program
