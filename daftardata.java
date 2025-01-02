@@ -10,7 +10,7 @@ public class daftardata {
         System.out.println("Daftar Harga Mobil");
         System.out.println("==================================");
         for (int i = 0; i < harga.size(); i++) {
-                System.out.print("Merk Mobil : " + merk.get(i)+" || ");
+                System.out.print((i+1)+". Merk Mobil : " + merk.get(i)+" || ");
                 System.out.println("Harga Mobil : " + harga.get(i));
         }
         System.out.println("==================================");
