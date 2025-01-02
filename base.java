@@ -14,7 +14,7 @@ public class base{
             System.out.println("2. Daftar data ");
             System.out.println("3. Edit data ");
             System.out.println("4. Harga Mobil tertinggi dan terendah ");
-            System.out.println("5. Exit ");
+            System.out.println("0. Exit ");
             System.out.println("==================================");
             int x = input.nextInt();
             switch (x) {
@@ -27,10 +27,10 @@ public class base{
                     obj1.daftardatamobil();
                     break;
                 case 3:
-                    edit obj2 = new edit();
-                    obj2.editmobil();
+                    update obj2 = new update();
+                    obj2.updatedata();
                     break;
-                case 5:
+                case 0:
                     input.close();
                     System.exit(0);
                     break;
