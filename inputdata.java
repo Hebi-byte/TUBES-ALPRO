@@ -13,7 +13,7 @@ public class inputdata {
         System.out.println("masukkan merk mobil : ");
         merk.add(input.next());
         System.out.println("masukkan harga mobil : ");
-        harga.add( input.nextInt());
+        harga.add(input.nextInt());
         return;
     }   
 }
