@@ -7,6 +7,28 @@ public class base{
     public static ArrayList<Integer>ppn = new ArrayList<>();
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        
+        merk.add("Toyota");
+        harga.add(300000000);
+        ppn.add(30000000);
+
+        merk.add("Honda");
+        harga.add(250000000);
+        ppn.add(25000000);
+
+        merk.add("Suzuki");
+        harga.add(200000000);
+        ppn.add(20000000);
+
+        merk.add("Mitsubishi");
+        harga.add(350000000);
+        ppn.add(35000000);
+
+        merk.add("Nissan");
+        harga.add(280000000);
+        ppn.add(28000000);
+
         while (true) {
             System.out.println("==================================");
             System.out.println("Deeler Mobil");
@@ -33,8 +55,8 @@ public class base{
                     break;
                 case 4:
                     nilai obj3 = new nilai();
-                    obj3.nilaiterendah();
                     obj3.nilaitertinggi();
+                    obj3.nilaiterendah();
                     break;
                 case 0:
                     input.close();
