@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "base",
+            "request": "launch",
+            "mainClass": "base",
+            "projectName": "TUBES-ALPRO_1a20556b"
+        },
+        {
+            "type": "java",
             "name": "edit",
             "request": "launch",
             "mainClass": "edit",
