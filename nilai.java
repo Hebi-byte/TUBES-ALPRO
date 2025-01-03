@@ -16,6 +16,7 @@ public class nilai {
                 maxppn = ppn.get(i);
             }
         }
+        System.out.println("nilai tertinggi");
         System.out.println("Merk Mobil "+maxmerk + " || Harga Mobil : " + max +" || Harga PPN : " + maxppn);
     } 
 
@@ -34,6 +35,7 @@ public class nilai {
                 minppn = ppn.get(i);
             }
         }
+        System.out.println("nilai terendah");
         System.out.println("Merk Mobil "+minmerk + " || Harga Mobil : " + min +" || Harga PPN : " + minppn);
 
     }
