@@ -31,6 +31,11 @@ public class base{
                     update obj2 = new update();
                     obj2.updatedata();
                     break;
+                case 4:
+                    nilai obj3 = new nilai();
+                    obj3.nilaiterendah();
+                    obj3.nilaitertinggi();
+                    break;
                 case 0:
                     input.close();
                     System.exit(0);
