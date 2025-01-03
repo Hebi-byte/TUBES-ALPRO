@@ -9,6 +9,13 @@
             "name": "base",
             "request": "launch",
             "mainClass": "base",
+            "projectName": "TUBES-ALPRO_8cb4add4"
+        },
+        {
+            "type": "java",
+            "name": "base",
+            "request": "launch",
+            "mainClass": "base",
             "projectName": "TUBES-ALPRO_1a20556b"
         },
         {
