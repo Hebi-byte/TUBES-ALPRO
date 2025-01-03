@@ -143,6 +143,8 @@ kamus
     merk : ArrayList of String
     ppn : ArrayList of Integer
     max : Integer
+    maxmerk : String
+    maxppn : Integer
     i : Integer
 algoritma
     harga <- base.harga
@@ -150,13 +152,18 @@ algoritma
     ppn <- base.ppn
 
     max <- harga.get(0)
+    maxmerk <- merk.get(0)
+    maxppn <- ppn.get(0)
     FOR i <- 0 TO harga.size() - 1
         IF max < harga.get(i) THEN
             max <- harga.get(i)
+            maxmerk <- merk.get(i)
+            maxppn <- ppn.get(i)
         END IF
     END FOR
-
-    output ("Merk Mobil : " + merk.get(harga.indexOf(max)) + " || Harga Mobil : " + max + " || Harga PPN : " + ppn.get(harga.indexOf(max)))
+    
+    output ("nilai tertinggi")
+    output ("Merk Mobil "+maxmerk + " || Harga Mobil : " + max +" || Harga PPN : " + maxppn)
 End Procedure
 
 Procedure hargaTerendah()
@@ -165,6 +172,8 @@ kamus
     merk : ArrayList of String
     ppn : ArrayList of Integer
     min : Integer
+    minmerk : String
+    minppn : Integer
     i : Integer
 algoritma
     harga <- base.harga
@@ -175,10 +184,13 @@ algoritma
     FOR i <- 0 TO harga.size() - 1
         IF min > harga.get(i) THEN
             min <- harga.get(i)
+            minmerk <- merk.get(i)
+            minppn <- ppn.get(i)
         END IF
     END FOR
 
-    output ("Merk Mobil : " + merk.get(harga.indexOf(min)) + " || Harga Mobil : " + min + " || Harga PPN : " + ppn.get(harga.indexOf(min)))
+    output ("nilai terendah");
+    output ("Merk Mobil "+minmerk + " || Harga Mobil : " + min +" || Harga PPN : " + minppn);
 End Procedure
     
 
