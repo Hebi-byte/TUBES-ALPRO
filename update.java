@@ -16,11 +16,11 @@ public class update {
             case 1:
                 edit obj = new edit();
                 obj.editmobil();
+                break; 
+            case 2:
+                delete obj1 = new delete();
+                obj1.deletedaftarmobil();
                 break;
-            // case 2:
-            //     hapus obj1 = new hapus();
-            //     obj1.hapusmobil();
-            //     break;
             case 0:
                 return;
             default:
