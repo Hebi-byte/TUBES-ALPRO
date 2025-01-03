@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class base{
     public static ArrayList<Integer>harga = new ArrayList<>();
     public static ArrayList<String>merk = new ArrayList<>();
+    public static ArrayList<Integer>ppn = new ArrayList<>();
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         while (true) {
