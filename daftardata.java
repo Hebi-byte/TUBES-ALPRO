@@ -16,8 +16,8 @@ public class daftardata {
         System.out.println("==================================");
         for (int i = 0; i < harga.size(); i++) {
                 System.out.print((i+1)+". Merk Mobil : " + merk.get(i)+" || ");
-                System.out.println("Harga Mobil : " + harga.get(i));
-                System.out.println("harga PPN :" + ppn.get(i));
+                System.out.print("Harga Mobil : " + harga.get(i)+" || ");
+                System.out.println("harga PPN :" + ppn.get(i));     
         }
         System.out.println("==================================");
         System.out.println("0. kembali");
