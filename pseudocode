@@ -107,6 +107,81 @@ algoritma
     End IF
 END Procedure
 
+procedure deletedaftarmobil()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    ppn : ArrayList of Integer
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+    ppn <- base.ppn
+
+    ppnmobil()
+
+    output ("==================================")
+    output ("Delete Data Mobil")
+    output ("==================================")
+
+
+    FOR i <- 0 TO harga.size() - 1
+        output ((i+1)+". Merk Mobil : " + merk.get(i)+" || Harga Mobil : " + harga.get(i)) 
+    END FOR
+
+    output ("==================================")
+    IF select > 0 && select <= harga.size() THEN
+        select <- select - 1
+        harga.remove(sellect);
+        merk.remove(sellect);
+        ppn.remove(sellect);
+    END IF  
+End Procedure
+
+Procedure hargaTertinggi()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    ppn : ArrayList of Integer
+    max : Integer
+    i : Integer
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+    ppn <- base.ppn
+
+    max <- harga.get(0)
+    FOR i <- 0 TO harga.size() - 1
+        IF max < harga.get(i) THEN
+            max <- harga.get(i)
+        END IF
+    END FOR
+
+    output ("Merk Mobil : " + merk.get(harga.indexOf(max)) + " || Harga Mobil : " + max + " || Harga PPN : " + ppn.get(harga.indexOf(max)))
+End Procedure
+
+Procedure hargaTerendah()
+kamus
+    harga : ArrayList of Integer
+    merk : ArrayList of String
+    ppn : ArrayList of Integer
+    min : Integer
+    i : Integer
+algoritma
+    harga <- base.harga
+    merk <- base.merk
+    ppn <- base.ppn
+
+    min <- harga.get(0)
+    FOR i <- 0 TO harga.size() - 1
+        IF min > harga.get(i) THEN
+            min <- harga.get(i)
+        END IF
+    END FOR
+
+    output ("Merk Mobil : " + merk.get(harga.indexOf(min)) + " || Harga Mobil : " + min + " || Harga PPN : " + ppn.get(harga.indexOf(min)))
+End Procedure
+    
+
 
 Program base
 kamus
