@@ -8,6 +8,7 @@ public class base{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        //dummy data
         
         merk.add("Toyota");
         harga.add(300000000);
