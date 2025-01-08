@@ -23,6 +23,9 @@ public class delete {
                 merk.remove(sellect);
                 ppn.remove(sellect);
             }
+            else{
+                deletedaftarmobil();
+            }
 
     }
 }
