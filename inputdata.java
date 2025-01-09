@@ -14,6 +14,5 @@ public class inputdata {
         merk.add(input.next());
         System.out.println("masukkan harga mobil : ");
         harga.add(input.nextInt());
-        return;
     }   
 }
