@@ -8,6 +8,7 @@ public class base{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+
         //dummy data
         
         merk.add("Toyota");
@@ -58,8 +59,7 @@ public class base{
                     break;
                 case 0:
                     input.close();
-                    System.exit(0);
-                    break;
+                    return;
                 default:
                     System.out.println("Pilihan tidak ada");
                     break;
