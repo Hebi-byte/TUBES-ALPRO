@@ -11,24 +11,21 @@ public class base{
         //dummy data
         
         merk.add("Toyota");
-        harga.add(300000000);
-        ppn.add(30000000);
+        harga.add(30000000);
 
         merk.add("Honda");
-        harga.add(250000000);
-        ppn.add(25000000);
+        harga.add(25000000);
 
         merk.add("Suzuki");
-        harga.add(200000000);
-        ppn.add(20000000);
+        harga.add(20000000);
+
 
         merk.add("Mitsubishi");
-        harga.add(350000000);
-        ppn.add(35000000);
+        harga.add(35000000);
+
 
         merk.add("Nissan");
-        harga.add(280000000);
-        ppn.add(28000000);
+        harga.add(28000000);
 
         while (true) {
             System.out.println("==================================");
